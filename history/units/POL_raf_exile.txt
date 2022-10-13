@@ -1,0 +1,14 @@
+﻿air_wings = {
+	
+	129 = { 
+		###303 squadron poland historical
+		fighter_equipment_2 = {
+			owner = "POL" 
+			amount = 100
+		}
+		fighter_equipment_2 = {
+			owner = "POL" 
+			amount = 100
+		}
+	}
+}

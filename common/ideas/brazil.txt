@@ -1,0 +1,745 @@
+ideas = {
+
+	country = {
+
+	   BRA_unreliable_army = {
+			picture = generic_army_problems
+			removal_cost = -1
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				tag = BRA
+			}
+
+			modifier = {
+				army_org_factor = -0.10
+				conscription_factor = -0.25
+				#war_support_factor = -0.05
+				army_attack_factor = -0.05	
+                military_leader_cost_factor = 1.0
+				planning_speed = -0.25		
+			}
+		}
+
+       BRA_unreliable_army_2 = {
+			picture = generic_army_problems
+			removal_cost = -1
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				tag = BRA
+			}
+
+			modifier = {
+				army_org_factor = -0.05
+				conscription_factor = -0.15
+				#war_support_factor = -0.05
+				#army_attack_factor = -0.05	
+                #military_leader_cost_factor = 1.0
+				planning_speed = -0.15
+			}
+		}
+
+		BRA_unstable_republic = {
+			picture = por_unstable_republic
+			removal_cost = -1
+
+			available = {
+				has_government = neutrality
+			}
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			modifier = {
+				political_power_gain = -0.5
+				stability_weekly = -0.004
+				production_speed_buildings_factor = -0.20	
+			}
+		}
+
+		BRA_unstable_republic_2 = {
+			picture = por_unstable_republic
+			removal_cost = -1
+
+			available = {
+				has_government = neutrality
+			}
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					add_ideas = BRA_unstable_republic_3
+				}
+			}
+
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = -0.001
+				fascism_drift = 0.03
+				production_speed_buildings_factor = -0.15	
+			}
+		}
+		
+		BRA_unstable_republic_3 = {
+			picture = por_unstable_republic
+			removal_cost = -1
+
+			available = {
+				has_government = democratic
+			}
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_weekly = -0.002
+				neutrality_drift = 0.04
+				production_speed_buildings_factor = -0.10	
+			}
+		}
+	
+		BRA_coffee_exports = {
+			picture = agrarian_society_1
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_infrastructure_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		BRA_coffee_exports_improved = {
+			picture = agrarian_society_1
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				min_export = 0.1
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_infrastructure_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		BRA_coffee_exports_improved_2 = {
+			picture = agrarian_society_1
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				min_export = 0.1
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_infrastructure_factor = -0.1
+				industrial_capacity_factory = 0.08
+			}
+		}
+
+		BRA_coffee_exports_improved_3 = {
+			picture = agrarian_society_1
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				min_export = 0.1
+				production_speed_infrastructure_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		great_depression_brazil = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = great_depression
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = -0.05		
+			}
+		}
+		
+		great_depression_brazil_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = great_depression			
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.05	
+			}
+		}
+		
+		great_depression_brazil_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = great_depression			
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		BRA_utilise_our_capacity_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_central_management
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05		
+			}
+		}		
+		
+		BRA_social_security = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_disjointed_gov
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = 0.02			
+				industrial_capacity_factory = 0.05	
+			}
+		}
+
+		BRA_burn_coffee_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_agrarian_reform
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}	
+
+		BRA_national_security_court_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_intel_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				intelligence_agency_defense = 0.5
+			}			
+		}	
+
+		BRA_consolidation_of_labor_laws_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_production_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				stability_factor = 0.02
+				industrial_capacity_factory = 0.03				
+			}			
+		}			
+		
+        incompetent_heavy_industry_brazil = {
+			
+			available = {}
+			
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			picture = incompetent_heavy_industry
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.2
+				production_factory_max_efficiency_factor = -0.05
+			}
+			
+			research_bonus = {
+				industry = -0.1
+                                heavy_industry = -0.1
+				armor = -0.1
+			}
+		}
+		
+		BRA_military_restrictions = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = tfv_can_conscription_crisis			
+
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_join_factions = no 
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.3
+				naval_doctrine = -0.15
+				air_doctrine = -0.15			
+			}
+			
+			
+			modifier = {
+				conscription_factor = -0.35	
+				experience_gain_factor = -0.1
+				experience_gain_army_factor = -0.1				
+			}
+		}
+		
+		BRA_academia_militar_das_agulhas_negras_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_reserve_divisions
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02	
+				experience_gain_army = 0.05				
+			}
+		}
+		
+		BRA_import_substitution_industrialization = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_exploit_mines
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}		
+		
+		desenvolvimentismo = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			    industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		
+		estadonovo = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+			    neutrality_drift = 0.1 
+				neutrality_acceptance = 35
+			}
+		}
+		
+		provisorio = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = { 
+			       political_power_cost = 0.1
+				   stability_factor = -0.20
+			}
+		}
+		
+		clt = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = { 
+				   stability_factor = 0.20
+			}
+		}
+		
+		populism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = { 
+				   conscription = 0.02
+				   industrial_capacity_factory = 0.01
+				   industrial_capacity_dockyard = 0.02
+				   political_power_cost = -0.05
+			}
+		}
+		
+		reforma = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = { 
+				   conscription = 0.05
+			}
+		}
+		
+		democracia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+			    democratic_drift = 0.1
+				democratic_acceptance = 75
+			}
+		}
+	  	
+		newconstitution = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			rule = {
+				can_join_factions = no 
+			}
+			
+			modifier = { stability_factor = 0.05 }
+			}
+		
+		
+
+		mona_vv = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = { attrition = -0.03
+                         army_morale_factor = 0.02
+                         						 }
+			}
+		bra_exercito = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = general_staff
+			
+			modifier = {
+                         army_org_factor = -0.05
+						 training_time_factor = 0.05
+						 conscription_factor = -0.1
+						 supply_consumption_factor = -0.02
+						 army_attack_factor = 0.05
+						 attrition = -0.05
+						 
+                         						 }
+			}
+	bra_exports = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = { research_speed_factor = 0.05
+						 
+                         						 }
+			}
+
+	bra_infraestructure = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+			
+			modifier = { production_speed_infrastructure_factor = -0.2
+						 
+                         						 }
+			}				
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		IMBEL = {
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+				has_completed_focus = BRA_fabrica_de_itajuba
+			}
+		
+			research_bonus = {
+				infantry_weapons = 0.12
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

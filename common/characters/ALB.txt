@@ -1,0 +1,578 @@
+characters={
+	ALB_king_zog={
+		name="King Zog"
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KING_ZOG_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_enver_hoxha={
+		name="Enver Hoxha"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KING_ZOG_DESC"
+			ideology=stalinism
+			traits={ staunch_stalinist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_xhemal_aranitasi={
+		name="Xhemal Aranitasi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_prenk_pervizi={
+		name="Prenk Pervizi"
+		advisor={
+			slot = army_chief
+			idea_token = ALB_prenk_pervizi
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ALB_ibrahim_biçakçiu={
+		name="Ibrahim Biçakçiu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_gustav_mirdashi={
+		name="Gustav Mirdashi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer trickster }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_mujo_ulqinaku={
+		name="Mujo Ulqinaku"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_vasil_bej_biçakçiu={
+		name="Vasil Bej Biçakçiu"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_More_Generic_5.tga"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ captain_of_industry_mck_tfv }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	ALB_ishak_mula={
+		name="Ishak Mula"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	ALB_halil_nergutti={
+		advisor={
+			slot = high_command
+			idea_token = ALB_halil_nergutti
+			allowed  = {
+					original_tag  = ALB
+				}
+				ledger  = navy 
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_halil_nergutti"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	ALB_ismael_ghaxa={
+		advisor={
+			slot = navy_chief
+			idea_token = ALB_ismael_ghaxa
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_ismael_ghaxa"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	ALB_hajre_fetahu={
+		advisor={
+			slot = theorist
+			idea_token = ALB_hajre_fetahu
+			allowed  = {
+					original_tag  = ALB
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.070
+				}
+				ledger  = navy 
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="ALB_hajre_fetahu"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	ALB_xhelal_mitrovica={
+		advisor={
+			slot = theorist
+			idea_token = ALB_xhelal_mitrovica
+			allowed  = {
+					original_tag  = ALB
+				}
+				ledger  = air 
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="ALB_xhelal_mitrovica"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+	ALB_selim_moishiou={
+		advisor={
+			slot = high_command
+			idea_token = ALB_selim_moishiou
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					army_artillery_2 
+				}
+				ledger  = army 
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_selim_moishiou"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	ALB_fiqri_dine={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_fiqri_dine
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="ALB_fiqri_dine"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	ALB_kol_bibe_mirakaj={
+		advisor={
+			slot = army_chief
+			idea_token = ALB_kol_bibe_mirakaj
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_kol_bibe_mirakaj"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	ALB_qemal_komani={
+		advisor={
+			slot = theorist
+			idea_token = ALB_qemal_komani
+			allowed  = {
+					original_tag  = ALB
+				}
+				ledger  = army 
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="ALB_qemal_komani"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	ALB_alexander_mori={
+		advisor={
+			slot = high_command
+			idea_token = ALB_alexander_mori
+			allowed  = {
+					original_tag  = ALB
+				}
+				ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_alexander_mori"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	ALB_aziz_sulejmani={
+		advisor={
+			slot = air_chief
+			idea_token = ALB_aziz_sulejmani
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_aziz_sulejmani"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	ALB_midhat_frasheri={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_midhat_frasheri
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="ALB_midhat_frasheri"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	ALB_jocelyn_percy={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_jocelyn_percy
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="ALB_jocelyn_percy"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	ALB_kristo_cajupi={
+		advisor={
+			slot = high_command
+			idea_token = ALB_kristo_cajupi
+			allowed  = {
+					original_tag  = ALB
+				}
+				ledger  = army 
+				traits  = {
+					army_concealment_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_kristo_cajupi"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	ALB_eqrem_libohova={
+		advisor={
+			slot = air_chief
+			idea_token = ALB_eqrem_libohova
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_eqrem_libohova"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+	ALB_zuhdi_shabani={
+		advisor={
+			slot = air_chief
+			idea_token = ALB_zuhdi_shabani
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_zuhdi_shabani"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	ALB_1={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_1
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="ALB_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	ALB_3={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_3
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					technical_especialist 
+				}
+		}
+		name="ALB_3"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	ALB_rexhep_mitrovica={
+		advisor={
+			slot = navy_chief
+			idea_token = ALB_rexhep_mitrovica
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_rexhep_mitrovica"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	ALB_2={
+		advisor={
+			slot = political_advisor
+			idea_token = ALB_2
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					industrial_planner 
+				}
+		}
+		name="ALB_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	ALB_hasan_begolli={
+		advisor={
+			slot = navy_chief
+			idea_token = ALB_hasan_begolli
+			allowed  = {
+					original_tag  = ALB
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="ALB_hasan_begolli"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+}

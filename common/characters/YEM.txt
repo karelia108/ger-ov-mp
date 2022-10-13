@@ -1,0 +1,57 @@
+characters={
+	YEM_imam_yahya={
+		name="Imam Yahya"
+		portraits={
+			civilian={
+				large="gfx/leaders/YEM/Portrait_Yemen_Imam_Yahya.tga"
+			}
+		}
+		country_leader={
+			desc="POLITICS_IMAM_YAHYA_DESC"
+			ideology=despotism
+			expire="1948.1.1.1"
+			id=-1
+		}
+	}
+	YEM_salim_ibn_abd_allah={
+		name="Salim ibn Abd Allah"
+		portraits={
+			civilian={
+				large="gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ compassionate_gentleman }
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+	YEM_umar_ibn_ali={
+		name="Umar ibn Ali"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ dismal_enigma }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	YEM_abd_allah_ibn_hasan={
+		name="Abd Allah ibn Hasan"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+}

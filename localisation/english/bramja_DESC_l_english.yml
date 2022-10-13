@@ -1,0 +1,82 @@
+﻿ l_english:
+
+
+### Leaders ###
+
+ POLITICS_CHARLES_LINDBERGH_DESC:0 "Charles Lindbergh\n An American aviator, military officer, author, inventor, and activist. At the age of 25 in 1927, he went from obscurity as a U.S. Air Mail pilot to instantaneous world fame by winning the Orteig Prize for making a nonstop flight from New York to Paris. He opposes not only the intervention of the United States, but also the provision of aid to the United Kingdom. He is a leading figure in the anti-war America First Committee, which stands for the isolationism he campaigns for."
+ POLITICS_DOUGLAS_MACARTHUR_DESC:0 "General and now president of the USA, represents to some a beacon of strengh, to others the corrupting influence of the military over politics."
+ POLITICS_REZA_SHAH_PAHLAVI_DESC:0 "Shah of Iran since 15 December 1925, when he was appointed as the legal monarch of Iran by decision of Persia's Majlis (constituent assembly), ending the rule of the then already exiled Ahmad Shah and the Qajar Dynasty. Before this he had already been the real power in Persia since the 1921 coup d'état by the Persian Cossack Brigade which he led (supported by the British), being Sardar Sepah (commander in chief of the army), minister of war and later also prime minister.\n Inspired Atatürks Turkey, Reza Shah has introduced many social, economic, and political reforms; amongst which are the modernising of infrastructure and the military, policies of detribalization, sedentarization and Persianization, he has laid a foundation for a modern Iranian state.\n However the future of this state and the Shahs rule are bound to be rocky, as the ballance of power in the region and the world at large is shifting. Will the Shah be able to keep playing the foreign powers against each other to maintains Iran's freedom?" 
+ POLITICS_REZA_SHAH_PAHLAVI_DESC_prisoner:0 "Reza Shah has officially been restored as the ruler of Iran now that the Sovoiets and British have been driven out of the country. However the British have as a consequence imprisoned the reinstated Shah as he had been in exile under their supervision. The new benefactors of the Iranian State will have to make haste to locate and free the Shah if they wish to stabilize the country and legitimize the new order."
+ POLITICS_REZA_SHAH_PAHLAVI_DESC_freed:0 "Reza Shah once again properly rules his country from the \"§YTakht-e Khurshīd§!\" (the Persian Sun Throne), having been freed from his imprisonment. The question now is whether he can keep Iran a free nation..."
+
+#!!!Portrait Mohammed her: Portrait_Mohammad_Reza_Pahlavi.dds 
+
+### Leader traits ###
+
+ political_prisoner:0 "적에게 감금중"
+ political_prisoner_desc:0 "나를 구하러 와줄 영웅이 필요하다..."
+
+
+### Opertions ###
+
+ rescue_Reza_Shah:0 "조로아스터 작전"
+ rescue_Reza_Shah_desc:0 "§LAs part of the [ENG.GetFactionName] occupation of [Per.GetName], Reza Shah had to abdicate in favour of his more pliant son. Consequently Reza Shah had to go in \"supervised\" exile, however this turned into outright imprisonment as we liberated Persia from communist & capitalist oppression. In an effort to stabilize the country and to win over its population & leadership to our cause entirely, we promised to free and reinstated Reza Pahlavi. Now that we have located the compound where he is likely held, we should launch a rescue operation with haste!§!"
+ rescue_Reza_Shah_infiltration:0 "감옥 인근에 특수부대 강하"
+ rescue_Reza_Shah_infiltration_desc:0 "우리 정보원들이 레자 팔라비가 감금되어 있는 곳을 알아냈고 이 인근에 정예 특수부대가 강하할 것입니다."
+ rescue_Reza_Shah_attack:0 "지역 공습"
+ rescue_Reza_Shah_attack_desc:0 "지역에 공습이 개시될 것이며 샤 경비대의 주의를 분산시킬 것입니다. 그 동안 우리 요원들은 영내에 침투하여 목표물을 탈옥시킬 것입니다."
+ rescue_Reza_Shah_exfiltration:0 "비행기를 통한 탈출"
+ rescue_Reza_Shah_exfiltration_desc:0 "레자 샤와 팀을 가까운 지정 장소에서 비행기로 수송할 것이고, 이후 우군의 비행장으로 귀환할 것입니다."
+ #!!!Relation modifer, add? GER_rescued_mussolini:0 "Rescued Mussolini"!!!
+ rescue_Reza_Shah_outcome_tt:0 "우리는 레자 샤를 해방시도를 할 것입니다. 이 시도는 위험합니다..."
+
+#Parties#
+
+ MCK_qing_restored:0 "만주국 회복주의자 군벌"
+ 
+ 
+ #Countries#
+ 
+ GER_greater_german_reich_fascism:0 "대독일국"
+ GER_greater_german_reich_fascism_DEF:0 "대독일국"
+
+#Factions#
+
+ American_League:0 "아메리카 연맹"
+
+#Tooltips resistance#
+
+
+ 
+ #Tooltips Decisions added#
+ 
+ GER_peace_with_Finland:0 "핀란드와의 평화"
+ GER_peace_with_Finland_desc:0 "동유럽이 우리와 소련 사이에 분열되고 조각나면서 핀란드인들은 이 새로운 질서에 계속 저항하는 몇 안 되는 나라들 중 하나로 남게 되었습니다. 빠른 시일에 상당한 외국의 지원을 받을 수 있다는 희망도 없고, 국경에서 탐욕스럽게 군침을 흘리고 있는 소련이 없다면, 계속되는 전쟁은 어느 쪽에게도 유익하지 않습니다. 아마도 그들은 미래에 여전히 우리에게 유용함을 증명할 수 있을 것입니다.."
+ bramja_FIN_GER_Peace_tt:0 "핀란드는 우리의 제안을 받아들일 가능성이 높지만, 당신은 이 기우뚱한 북부인들을 절대 알 수 없을것입니다..."
+ GER_Gau_Silesia_Kattowitz:0 "카토비츠를 오버슐레지엔 대관구에 통합"
+ GER_Gau_Silesia_Kattowitz_desc:0 "이제 지역에 평화가 돌아왔고 카토비츠는 새로이 설립된 오버슐레지엔 대관구의 행정부에 통합될 것입니다(슐레지엔 대관구의 분할 결과). 저항이 완전히 진압되고 독일의 방식이 제대로 재수립되면 다시 한 번 독일국의 완전한 한 부분이 될 것입니다!"
+ GER_Integrate_Kattowitz:0 "국가 재통합: 오버슐레지엔"
+ GER_Integrate_Kattowitz_desc:0 "대부분의 저항이 진압되었고 독일의 행정, 교육 등이 완전히 재건되었습니다. 카토비츠에 오신것을 환영합니다."
+ GER_Gau_Silesia_Teschen:0 "테셴을 오버슐레지엔 대관구에 통합"
+ GER_Gau_Silesia_Teschen_desc:0 "외스터라이히로부터 분리된 이래, 옛 테셴 공국은 체코와 폴란드가 이 지역을 지배하는 다른 국가들과 경쟁하면서 상당한 갈등을 겪었습니다. 지난 몇 년 동안 테셰너 슐레지엔이 다시 한 번 번영을 찾기 위해 독일의 품으로 돌아가야 한다는 사실이 더욱 명백해졌습니다. 오늘이 바로 그 날입니다!" 
+ GER_Integrate_Teschen:0 "국가 재통합 : 테셰너 슐레지엔"
+ GER_Integrate_Teschen_desc:0 "비록 재점령된 독일 영토의 대부분보다 더 큰 저항이 있었지만 테셴과 그 주변 영토는 결국 완전히 재통합되었습니다!"
+ GER_Claim_Slovenia:0 "슬로베니아 독일화"
+ GER_Claim_Slovenia_desc:0 "Now that the former Austrian territory of Slovenia has become part of the [Root.GetNameDef] once again, we should start the pacification of the region to prepare it for full integration."
+ GER_Integrate_Slovenia:0 "국가 재통합 : 크라인"
+ GER_Integrate_Slovenia_desc:0 "대전쟁의 얼룩진 유산의 또 다른 부분이 씻겨내려갔습니다, 크라인은 평화를 되찾았고 제3국이자 마지막 국가의 일부가 될 준비가 되었습니다!"
+ GER_support_reichskommissariats:0 "[From.GetNameDef]를(을) 지원"
+ GER_support_reichskommissariats_desc:0 "국가의 미래를 보장하기 위해 동방에서의 정당한 정복에 대한 완전한 지배를 확립해야 합니다! 국가판무관부에 필요한 장비를 보내어 [FROM.GetLeader]의 군대가 모든 저항을 근절시키도록 해야합니다."
+ GER_peace_with_Iran:0 "테헤란 명령"
+ GER_peace_with_Iran_desc:0 "페르시아에게 우리의 의지 강요: "
+ bramja_Per_buffer_tt:0 "§W1.페르시아는 완충국가로 지정될 것입니다.\n2.우리는 페르시아의 독립을 보장하지만 그 외에도 페르시아는 정치적, 군사적으로 독립적일 것입니다. 이 지역은 동방의 동맹국들과 맺은 협정에 따라 우리의 영향력이 미치는 한계를 표시합니다.\n3.우리는 그들이 정치적, 경제적으로 그들의 옛 압제자들과의 관계를 끊도록 할 것입니다. 여기에 더해 [From.GetNameDef]은 페르시아의 석유 매장량에 대한 독점권을 확고히 할 것입니다.§! "
+ bramja_Per_countenanced_tt:0 "\n§L 소련과 영국에 의한 점령은 페르시아에 많은 고통을 초래했고 레자 샤 팔라비가 친영 성향의 아들 무함마드를 위해 퇴위하도록 강요받으면서 제대로 된 지도부가 없었습니다. 혼란기 동안 반대 이념을 선전하는 다양한 세력들이 그들의 힘을 증가시킬 기회를 얻었습니다.§!§O거기에 더해 나라의 불안정함은 만연한 불안의 온상이 되었습니다.§!\n§H 지역을 안정시키고 석유의 흐름을 보장하기 위해 우리가 해야할 최선의 선택은 레자 팔라비에게 합법성을 부여하고 독립 기풍과 그의 (어느 정도) 입증된 친[ROOT.GetFactionName] 성향을 고려하여 다시 한 번 샤로 추대하는 것입니다.§!\n§R하지만 레자 팔라비가 현재 영국군에 의해 유폐되어 있습니다.§!§W 이에 우리는 구조 작전을 계획해야 합니다.§!§R 그가 한시라도 빨리 왕위에 복귀하지 않는다면 나라는 완전한 혼란에 빠질 것입니다. §!"
+ bramja_Per_oil_rights_tt:0 "\n§W이 조약은 호르모즈간의 석유 매장지에 대한 독점 권한을 우리에게 줄 것입니다. 하지만 만약 우리가 또한 §!§M호르모즈간 해협과 아덴만, 수에즈 운하의 통제권을 갖고 있다면§!§G우리와 우리의 강력한 동맹은 후제스탄과 파르스 유전의 독점권 또한 확고히 할 수 있을 것입니다. §! \n"
+ GER_at_end_of_world_SAF:0 "세계종말의 신도"
+ GER_at_end_of_world_SAF_desc:0 "§LThe South African Army and nation have suffered unsustainable casualties during the [ROOT.GetFactionName] conquest of Afrika, which is now at their doorstep...\n\nThe ongoing war between us and our fellow Germanic people in South Afrika is most unnatural and was never popular amongst the South African population, let alone the Afrikaners. The [SAF.GetAdjective] ruling class, decimated and facing our imminent invasion of their homelands, should be more than ever ready to finally accept our fatherly protection.\nMoreover coopting the Afrikaners will nullify many problems direct rule from far away [Root.Capital.GetName] would imply...§!"
+ Conditions_GER_at_end_of_world_SAF_tt:0 "To send a credible ultimatum, two conditions must be fulfilled:\n  -South Africa has lost more than 130,000 men or implemented conscription for all adults.\n  -The [ROOT.GetFactionName] must have begun to occupy territory south of the Belgian Congo or Tanganyika."
+ GER_at_end_of_world_SAF_tt:0 "§LAfrikaner Nationalists are reaching out to us as of late, their messages stressing that their country is ripe for realignment to our cause... They know very well by now it is their last option to keep their current way of life and societal positions in tact.§! \n\n§O Even this prospect however might not dissuade pro-[SAF.GetFactionName] groups led by [SAF.GetLeader] though, stubbornly not wanting to see reason.§!\n§GEven if this were to pass, forces gathered by the \"Gryshemde\", \"Gesuiwerde Nasionale Party\" or by \"Oswald Pirow\" will be hell bent take the reins of government, by any means necessary to prevent this outcome.§!\n§MOur support should assure a beneficial outcome...§!\n "
+ SOV_refugees_and_refugees:0 "소련 난민, 탈영자 및 전문 지식인 유치"
+ SOV_refugees_and_refugees_desc:0 "[SOV.GetNameDef] is in a dire state, after facing the onslaught of the [GER.GetAdjective] invasion and loss of their Western territories, they now face constant German bombing raids and a general state of confusion. We can make use of this situation to launch a call for the growing amounts refugees and deserters to join us and settle here..."
+ 
+ #they hand over control over economic policy and oil reserves to us, while leaving them politically mostly independent. They will serve as good buffer state, and as a buffer our oil supplies. We will even be so gracious as to protect them from any attack!

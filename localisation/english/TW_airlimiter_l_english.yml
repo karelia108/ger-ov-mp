@@ -1,0 +1,10 @@
+﻿l_english:
+ gduairlimiter.1.t:0 "공군기지가 너무 큽니다!"
+ gduairlimiter.1.d:0 "[GDU_badairport1.GetName]의 공군기지는 너무 큽니다. 2단계보다 높습니다. 가장 작은 섬에는 공군기지를 최대 2단계까지만 건설할 수 있습니다.\n\n큰 섬에는 공군기지를 최대 5단계까지만 건설할 수 있습니다.\n\n하와이에는 이 제한이 없습니다. 지중해 역시 이 제한이 없습니다.\n\n이러한 변화는 태평양 전쟁을 더욱 흥미롭게 만들기 위한 것입니다."
+ gduairlimiter.1.a:0 "알았다." 
+ gduairlimiter.2.t:0 "공군기지가 너무 큽니다!" 
+ gduairlimiter.2.d:0 "[GDU_badairport2.GetName]의 공군기지는 너무 큽니다. 5단계보다 높습니다. 큰 섬에는 공군기지를 최대 5단계까지만 건설할 수 있습니다.\n\n가장 작은 섬에는 공군기지를 최대 2단계까지만 건설할 수 있습니다.\n\n하와이에는 이 제한이 없습니다. 지중해 역시 이 제한이 없습니다.\n\n이러한 변화는 태평양 전쟁을 더욱 흥미롭게 만들기 위한 것입니다." 
+ gduairlimiter.2.a:0 "알았다."
+ gduairlimiter.3.t:0 "공군기지가 너무 큽니다!"
+ gduairlimiter.3.d:0 "[GDU_badairport3.GetName]의 공군기지는 너무 큽니다. 0단계보다 높습니다. 황무지는 공군기지에 적합한 지역이 아닙니다."
+ gduairlimiter.3.a:0 "알았다."

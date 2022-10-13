@@ -1,0 +1,32 @@
+﻿l_english:
+ ### events ###
+ ## NOT IN USE YET ##
+ chi_jap.1.t:0 "[CHI.GetLeader]의 배신자"
+ chi_jap.1.d:0 "[CHI.GetLeader]이(가) 사악한 일본과 동맹을 맺어 국가와 국민을 배신했습니다! 너무 늦기 전에 뭐라도 해야합니다!"
+ chi_jap.1.a:0 "우리는 군벌과 협력해야 합니다!"
+ chi_jap.1.b:0 "우리는 홀로 움직여야만 합니다."
+ chi_jap.2.t:0 "[From.GetName](으)로부터의 메세지"                             #這個nation指民族(das Volk)
+ chi_jap.2.d:0 "최근 [CHI.GetName]이(가) 중국을 배신한 것과 관련하여 [From.GetLeader]은(는) 이 위협에 맞서 단결된 전선을 형성하기 위해 우리에게 협력을 요청하는 메세지를 보냈습니다."
+ chi_jap.2.a:0 "노예가 되길 거부하는 자들아 일어나라!"
+ chi_jap.2.b:0 "어쩌면 우리는 태양과 협력하여 더 밝은 미래를 가질 수 있을지도 모릅니다."
+ chi_jap.2.c:0 "그런 일은 없다!"
+ chi_jap.3.t:0 "중국의 사령관 - [From.GetLeader]"
+ chi_jap.3.d:0 "[From.GetLeader]은(는) 공영권의 일부가 되고 싶다는 희망을 담은 메세지를 보냈습니다."
+ chi_jap.3.a:0 "그들은 바람이 어느 쪽으로 부는지 확실히 알고 있습니다."
+ chi_jap.3.b:0 "이 공영권에 그들의 자리는 없습니다."
+ chi_jap.4.t:0 "요구 수락됨."
+ chi_jap.4.d:0 "[From.GetName]이(가) 우리에게 공영권에 들어오는 것을 허락했습니다!"
+ chi_jap.4.a:0 "공영권이 성장합니다!"
+ chi_jap.5.t:0 "요구 거절됨"
+ chi_jap.5.d:0 "[From.GetFactionName]에 합류하라는 우리의 요구가 거절되었습니다!"
+ chi_jap.5.a:0 "우리는 스스로 딜레마에 빠졌습니다."
+ chi_jap.6.t:0 "[From.GetName]이(가) 우리의 여정에 합류했습니다."
+ chi_jap.6.d:0 "[From.GetLeader]은(는) 또한 반역자인 [CHI.GetLeader]와(과) 일본의 위협을 목격했고 그들을 제거하기 위한 우리의 노력에 동참했습니다."
+ chi_jap.6.a:0 "중국은 단결해야 합니다!"
+ chi_jap.7.t:0 "[From.GetName]은(는) 우리와 합류하기를 거절합니다."
+ chi_jap.7.d:0 "[From.GetLeader]은(는) 나라를 구하기 위한 우리의 노력에 합류하기를 거부했습니다!"
+ chi_jap.7.a:0 "이건 또 다른 종류의 반역입니다!"
+ 
+ ### misc ###
+ chi_jap_alliance_threat:0 "중일전쟁 동맹"
+ PRC_kang_ri_jiu_wang:0 "Kang Ri Jiu Wang Yun Dong"

@@ -1,0 +1,13 @@
+﻿l_english:
+ ST:0 "위"
+ ND:0 "위"
+ RD:0 "위"
+ TH:0 "위"
+ WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ 전쟁"
+ CIVIL_WAR_NAME:0 "$ORDER$$SECOND$ 내전"
+ WAR_NAME_JAP_CHI:0 "중일전쟁"
+ WAR_NAME_PRC_CHI:0 "국공내전"
+ WAR_NAME_CHI_PRC:0 "국공내전"
+ WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$의 $STATE$ 탈환"
+ WAR_TAKE_CLAIM_NAME:0 "$ORDER$$FIRST$의 $STATE$ 침략"
+ WAR_NAME_ITA_ETH:0 "제2차 이탈리아-에티오피아 전쟁"

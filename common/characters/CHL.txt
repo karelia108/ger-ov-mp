@@ -1,0 +1,487 @@
+characters={
+	CHL_arturo_alessandri={
+		name="Arturo Alessandri"
+		portraits={
+			civilian={
+				large="GFX_Portrait_chile_arturo_alessandri"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ARTURO_ALESSANDRI_DESC"
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHL_jorge_gonzález_von_marées={
+		name="Jorge González von Marées"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JORGE_GONZÁLEZ_VON_MARÉES_DESC"
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHL_carlos_contreras_labarca={
+		name="Carlos Contreras Labarca"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHL_escudero_oscar_otárola={
+		name="Escudero Oscar Otárola"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_south_america_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CHL_luis_zañartu={
+		name="Luis Zañartu"
+		portraits={
+			civilian={
+				large="GFX_portrait_south_america_generic_8"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	CHL_julio_allard_pinto={
+		advisor={
+			slot = army_chief
+			idea_token = CHL_julio_allard_pinto
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					army_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_julio_allard_pinto"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	CHL_1={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_1
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					dismal_enigma 
+				}
+		}
+		name="CHL_1"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	CHL_gustavo_silva={
+		advisor={
+			slot = high_command
+			idea_token = CHL_gustavo_silva
+			allowed  = {
+					original_tag  = CHL
+				}
+				ledger  = navy 
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_gustavo_silva"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	CHL_jose_luis_sanchez_besa={
+		advisor={
+			slot = high_command
+			idea_token = CHL_jose_luis_sanchez_besa
+			allowed  = {
+					original_tag  = CHL
+				}
+				ledger  = air 
+				traits  = {
+					air_strategic_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_jose_luis_sanchez_besa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	CHL_marmaduke_grove={
+		advisor={
+			slot = air_chief
+			idea_token = CHL_marmaduke_grove
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					air_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_marmaduke_grove"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	CHL_3={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_3
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					fortification_engineer 
+				}
+		}
+		name="CHL_3"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	CHL_2={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_2
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					capitalist 
+				}
+		}
+		name="CHL_2"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	CHL_e_novoa_fuentes={
+		advisor={
+			slot = army_chief
+			idea_token = CHL_e_novoa_fuentes
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_e_novoa_fuentes"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	CHL_dario_mujica_gamboa={
+		advisor={
+			slot = air_chief
+			idea_token = CHL_dario_mujica_gamboa
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_dario_mujica_gamboa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	CHL_luis_alamos_barros={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_luis_alamos_barros
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="CHL_luis_alamos_barros"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	CHL_miguel_cruchaga_tacomal={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_miguel_cruchaga_tacomal
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="CHL_miguel_cruchaga_tacomal"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	CHL_c_j_de_la_motte={
+		advisor={
+			slot = navy_chief
+			idea_token = CHL_c_j_de_la_motte
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_c_j_de_la_motte"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	CHL_carlos_fuentes_rabe={
+		advisor={
+			slot = theorist
+			idea_token = CHL_carlos_fuentes_rabe
+			allowed  = {
+					original_tag  = CHL
+				}
+				research_bonus  = {
+					land_doctrine  = 0.070
+				}
+				ledger  = army 
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="CHL_carlos_fuentes_rabe"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+		}
+	}
+	CHL_gustavo_ross_santa_maria={
+		advisor={
+			slot = political_advisor
+			idea_token = CHL_gustavo_ross_santa_maria
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="CHL_gustavo_ross_santa_maria"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	CHL_arturo_espinoza_mujica={
+		advisor={
+			slot = high_command
+			idea_token = CHL_arturo_espinoza_mujica
+			allowed  = {
+					original_tag  = CHL
+				}
+				ledger  = army 
+				traits  = {
+					army_artillery_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_arturo_espinoza_mujica"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	CHL_carlos_puga_monsalve={
+		advisor={
+			slot = high_command
+			idea_token = CHL_carlos_puga_monsalve
+			allowed  = {
+					original_tag  = CHL
+				}
+				ledger  = navy 
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_carlos_puga_monsalve"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_3"
+			}
+		}
+	}
+	CHL_francisco_o_ryan_orrego={
+		advisor={
+			slot = navy_chief
+			idea_token = CHL_francisco_o_ryan_orrego
+			allowed  = {
+					original_tag  = CHL
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_francisco_o_ryan_orrego"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	CHL_ernesto_m_orlando={
+		advisor={
+			slot = high_command
+			idea_token = CHL_ernesto_m_orlando
+			allowed  = {
+					original_tag  = CHL
+				}
+				ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="CHL_ernesto_m_orlando"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+	CHL_dario_cellejas_rojas={
+		advisor={
+			slot = theorist
+			idea_token = CHL_dario_cellejas_rojas
+			allowed  = {
+					original_tag  = CHL
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.070
+				}
+				ledger  = navy 
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="CHL_dario_cellejas_rojas"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	CHL_ariosto_herrera={
+		advisor={
+			slot = theorist
+			idea_token = CHL_ariosto_herrera
+			allowed  = {
+					original_tag  = CHL
+				}
+				research_bonus  = {
+					air_doctrine  = 0.070
+				}
+				ledger  = air 
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="CHL_ariosto_herrera"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+}

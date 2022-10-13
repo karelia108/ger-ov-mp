@@ -1,0 +1,13 @@
+﻿ l_english:
+ CAN_east_claims_forts:0 "§Y캐나다§!: 레브라도와 뉴펀들랜드 국경 근처의 지방과 항구를 요새화합니다.\n"
+ CAN_west_claims_forts:0 "§Y캐나다§!: [USA.GetNameDef] 국경 근처의 지방과 항구를 요새화합니다.\n"
+ quebecois_propaganda_tooltip:0 "퀘벡 사람들은 결국 징병령을 완전히 따르기로 우리와 합의하게 될 것입니다.\n§G인내심이 보상 받을 것입니다.§!"
+ home_and_native_land_other_effect:0 "이것은 더 많은 자원병들이 서명하도록 설득할 수 있습니다.n"
+ quebec_angry:0 "퀘벡의 요청을 무시하는 일은 그들을 §R화나게§! 할 것입니다.\n"
+ quebec_extremely_angry:0 "퀘벡의 요청을 무시하는 일은 그들을 §R대단히 화나게§! 할 것입니다."
+ imperial_oil_tooltip:0 "더 많은 석유를 발견하기 위한 공동의 노력이 §Y앨버타§!에서 시작될 것입니다.\n"
+ polymer_corp_tooltip:0 "더 많은 고무를 발견하기 위한 공동의 노력이 §Y남부 온타리오§!에서 시작될 것입니다.\n"
+ que_population_migrates_north:0 "이전의 빈 땅에 정착한 §Y300000§!명의 사람들이 일자리 확장에 따라 §Y남부 퀘벡§!에서 §Y북부 퀘벡§!으로 이주할 것입니다.n"
+ que_claim_french_louisiana:0 "§Y프랑스령 루이지애나§! 전체에 핵심주를 얻을 것입니다.\n"
+ canada_leaves_allies_tooltip:0 "캐나다는 §Y연합국을 탈퇴§!할 것입니다.\n"
+ que_independence_start:0 "퀘벡은 독립적입니다."

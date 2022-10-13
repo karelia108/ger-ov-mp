@@ -1,0 +1,10 @@
+﻿l_english:
+
+ can_fascist_tendencies_pro:0 "파시스트 성향"
+ can_fascist_tendencies_con:0 "파시스트 성향"
+ can_communist_tendencies_pro:0 "공산주의 성향"
+ can_communist_tendencies_con:0 "공산주의 성향"
+ can_faction_unity:0 "세력 단결"
+ usa_considering_faction:0 "세력 가입 요청"
+ usa_continental_alliance:0 "역사적 관계"
+ usa_joined_faction:0 "세력 가입"

@@ -1,0 +1,1215 @@
+﻿###########################
+# Pride of the Fleet Events
+###########################
+
+add_namespace = pride
+add_namespace = testing
+
+country_event = { # test in summer 1939
+	id = testing.1
+	title = testing.1.t
+	desc = testing.1.d
+	picture = GFX_report_event_german_pz2_offensive_france
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    ITA = {
+	    has_navy_size = {
+			unit = battleship
+			size > 6
+		}
+		}
+		ITA = {
+	    has_navy_size = {
+			unit = battleship
+			size > 7
+		}
+		}
+		
+		GER = {
+	    has_navy_size = {
+			unit = battle_cruiser
+			size > 1
+		}
+		}
+		GER = {
+	    has_navy_size = {
+			unit = battle_cruiser
+			size > 2
+		}
+		}
+		
+		JAP = {
+	    has_navy_size = {
+			unit = sh_battleship
+			size > 1
+		}
+		}
+		JAP = {
+	    has_navy_size = {
+			unit = sh_battleship
+			size > 2
+		}
+		}
+		
+		JAP = {
+	    has_navy_size = {
+			unit = carrier
+			size > 4
+		}
+		}
+		
+		USA = {
+	    has_navy_size = {
+			unit = carrier
+			size > 4
+		}
+		}
+		USA = {
+	    has_navy_size = {
+			unit = battleship
+			size > 4
+		}
+		}
+		
+		ENG = {
+	    has_navy_size = {
+			unit = carrier
+			size > 4
+		}
+		}
+		ENG = {
+	    has_navy_size = {
+			unit = battle_cruiser
+			size > 6
+		}
+		}
+	}
+	
+	option = {
+		name = "test summer 1939"
+	}
+}
+
+country_event = { # test in summer 1941
+	id = testing.2
+	title = testing.2.t
+	desc = testing.2.d
+	picture = GFX_report_event_GER_poland_devastation
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    ITA = {
+	    has_navy_size = {
+			unit = battleship
+			size > 3
+		}
+		}
+		
+		GER = {
+	    has_navy_size = {
+			unit = battleship
+			size > 3
+		}
+		}
+		GER = {
+	    has_navy_size = {
+			unit = submarine
+			size > 15
+		}
+		}
+		
+		GER = {
+	    has_navy_size = {
+			unit = submarine
+			size > 25
+		}
+		}
+		
+		JAP = {
+	    has_navy_size = {
+			unit = sh_battleship
+			size > 1
+		}
+		}
+		JAP = {
+	    has_navy_size = {
+			unit = sh_battleship
+			size > 2
+		}
+		}
+		
+		JAP = {
+	    has_navy_size = {
+			unit = carrier
+			size > 5
+		}
+		}
+		
+		USA = {
+	    has_navy_size = {
+			unit = carrier
+			size > 6
+		}
+		}
+		USA = {
+	    has_navy_size = {
+			unit = battleship
+			size > 7
+		}
+		}
+		
+		ENG = {
+	    has_navy_size = {
+			unit = carrier
+			size > 5
+		}
+		}
+		ENG = {
+	    has_navy_size = {
+			unit = battleship
+			size > 5
+		}
+		}
+	}
+	
+	option = {
+		name = "test summer 1941"
+	}
+}
+
+#Enemy Pride of the Fleet Sunk
+country_event = {
+	id = pride.1
+	title = pride.1.t
+	desc = pride.1.d
+	picture = prideofthefleetsunk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pride.1.a
+		add_stability = 0.025
+	}
+}
+
+#Our Pride of the Fleet Sunk
+country_event = {
+	id = pride.2
+	title = pride.2.t
+	desc = pride.2.d
+	picture = prideofthefleetsunk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pride.2.a
+		add_stability = -0.025
+	}
+}
+
+#Enable/disable AI speeches
+country_event = {
+	id = pride.4
+	title = pride.4.t
+	desc = pride.4.d
+	picture = GFX_report_event_reichstag_hitler_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = pride.4.a
+                set_global_flag = ai_speeches
+	}
+	option = {
+		name = pride.4.b
+                clr_global_flag = ai_speeches
+	}
+}
+
+add_namespace = EAI_C
+
+country_event = {
+	id = EAI_C.0
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		638 = { set_state_flag = JAP_controls}
+		632 = { set_state_flag = JAP_controls}
+		631 = { set_state_flag = JAP_controls}
+		629 = { set_state_flag = JAP_controls}
+		645 = { set_state_flag = USA_controls}
+		646 = { set_state_flag = USA_controls}
+		647 = { set_state_flag = USA_controls}
+		526 = { set_state_flag = USA_controls}
+		524 = { set_state_flag = USA_controls}
+		
+		USA = { country_event = { id = pride.5 days = 60 } }
+		
+		every_state = {
+	    	limit = { 
+	        	has_state_category = tiny_island 	 
+	    	}
+			add_dynamic_modifier = { modifier = tiny_island_airbase_limit }
+		 }
+		 
+		 every_state = {
+	    	limit = { 
+	        	has_state_category = small_island 			
+	    	}
+			add_dynamic_modifier = { modifier = small_island_airbase_limit }
+		 }
+		 
+		 118 = { add_dynamic_modifier = { modifier = small_island_airbase_limit } }
+		 
+		 every_state = {
+	    	limit = { 
+	        	OR = {
+				    is_core_of = LBA
+					state = 552
+					state = 452
+                }				
+	    	}
+			add_dynamic_modifier = { modifier = infra_limit }
+		 }
+		
+		JAP = {
+		every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = CHI
+				}
+				set_compliance = 35
+			}
+			}
+			RAJ = {
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = RAJ }
+					is_core_of = PAK
+				}
+				set_resistance = 3
+				set_compliance = 60
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = RAJ }
+					is_core_of = BUR
+				}
+				set_resistance = 4
+				set_compliance = 68
+			}
+		every_owned_state = {
+				limit = {
+					not = { is_core_of = RAJ }
+					is_core_of = NEP
+				}
+				set_resistance = 0
+				set_compliance = 73
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = RAJ }
+					is_core_of = BHU
+				}
+				set_resistance = 0
+				set_compliance = 80
+			}
+		}
+		AST = {
+	    	523 = {
+            	set_compliance = 50
+	            set_resistance = 2
+            }
+			737 = {
+            	set_compliance = 54
+	            set_resistance = 0
+            }
+        }	
+		ENG = {
+		    # hong ong
+	    	326 = {
+            	set_compliance = 75
+	            set_resistance = 4
+            }
+			#sudan
+			551 = {
+            	set_compliance = 50
+            }
+			549 = {
+            	set_compliance = 50
+            }
+        }
+		POL = {
+			96 = {
+				set_compliance = 40
+				set_resistance = 5
+			}
+			95 = {
+				set_compliance = 43
+				set_resistance = 5
+			}
+			94 = {
+				set_compliance = 40
+				set_resistance = 7
+			}
+			93 = {
+				set_compliance = 2
+				set_resistance = 24
+			}
+			89 = {
+				set_compliance = 3
+				set_resistance = 25
+			}
+		}
+
+        SPR = {
+	    	290 = {
+            	set_compliance = 34
+	            set_resistance = 18
+            }
+        }		
+			
+		ITA = {
+	    	550 = {
+            	set_compliance = 25
+	            set_resistance = 10
+            }
+
+            559 = {
+             	set_compliance = 25
+            	set_resistance = 10
+            }
+			163 = {
+				set_compliance = 30
+				set_resistance = 0
+			}
+			
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = LBA
+				}
+				set_compliance = 28
+			}
+			
+			country_event = { id = italy.50 days = 35 }
+		}
+		
+		SOV = {
+			
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = UKR
+				}
+				set_compliance = 40
+				set_resistance = 6
+			}
+		}
+		
+		FRA = {
+			
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = ALG
+				}
+				set_compliance = 52
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = TUN
+				}
+				set_compliance = 58
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = TUN
+				}
+				set_compliance = 58
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					is_core_of = CAR
+				}
+				set_compliance = 50
+			}
+			every_owned_state = {
+				limit = {
+					not = { is_core_of = ROOT }
+					OR = { is_core_of = DAH is_core_of = IVO is_core_of = GAB is_core_of = MRT  }
+				}
+				set_compliance = 78
+			}
+			if = { limit = { is_ai = yes }
+			division_template = {
+						name = "Colonial Garrison"
+						division_names_group = FRA_GAR_01
+						regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+	}
+	priority = 0
+					}
+			}
+		}
+			
+			
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			IRQ = {
+				give_resource_rights = { receiver = ENG state = 291 }
+			}
+			PER = {
+				give_resource_rights = { receiver = ENG state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+			}
+		}
+		GER = {
+			news_event = { id = news.2237 days = 19 }
+		}
+				
+        ENG = {
+			country_event = { id = britain.23 days = 280 }
+			#country_event = { id = britain.22 days = 511 }
+			country_event = { id = britain.39 days = 160 }
+			country_event = { id = BICE_britain.1 days = 129 }
+			country_event = { id = BICE_britain.2 days = 42 }
+			country_event = { id = BICE_britain.3 days = 47 }
+			country_event = { id = BICE_britain.5 days = 250 }
+			country_event = { id = BICE_britain.10 days = 663 }
+			country_event = { id = BICE_britain.11 days = 856 }
+			country_event = { id = britain.16 days = 20 }
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				create_equipment_variant = { # for future refits
+					name = "Late WW1 Refit"
+					type = ship_hull_heavy_1
+					name_group = ENG_BB_HISTORICAL
+					parent_version = 0
+					modules = { 
+						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_2
+						front_1_custom_slot = ship_heavy_battery_1
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
+						rear_1_custom_slot = ship_heavy_battery_1
+					}
+				}
+				hidden_effect = {	    
+					load_oob = "ENG_starting_ai" 
+			    }
+			}
+			
+			
+			if = { limit = { is_ai = no }
+		    hidden_effect = { 
+			set_technology = { tech_vickers_wellesley_equipment_1 = 1 popup = no
+	tech_saro_london_equipment_0 = 1 popup = no
+	tech_hendon_equipment_1 = 1 popup = no
+tech_hawker_fury_equipment_1 = 1  popup = no	
+tech_saro_london_equipment_1 = 1 popup = no }
+			load_oob = "ENG_starting_player"
+			}
+		}
+		}
+		USA = {
+			country_event = { id = usa.63 days = 2 }
+		}
+		every_country = { limit = { is_ai = yes OR = { tag = USA tag = ENG tag = SOV tag = GER tag = ITA tag = JAP tag = FRA } }
+			add_ideas = ai_ship_handicap
+		}
+		every_country = { limit = { is_ai = no }
+			country_event = startevent.9
+		}
+		every_country = { limit = { is_ai = no }
+		    country_event = startevent.17
+		}
+		random_country = { limit = { is_ai = no }
+		    country_event = pride.4
+		}
+		
+		JAP = { 
+			country_event = { id = japan.26 days = 134 } 
+			country_event = { id = japan.27 days = 139 } 		
+		}
+		if = { limit = { JAP = { is_ai = no } }
+		    hidden_effect = {
+		    JAP = { country_event = { id = startevent.2 }  
+			set_technology = { tech_JAP_light_bomber_equipment_1 = 1 popup = no
+	tech_JAP_light_bomber_equipment_2 = 1 popup = no
+	tech_JAP_medium_bomber_equipment_1 = 1 popup = no
+	tech_JAP_heavy_bomber_equipment_1 = 1 popup = no  }
+			load_oob = "JAP_starting_player"
+			}
+			}
+		}
+		else_if = { limit = { JAP = { is_ai = yes } }
+			hidden_effect = {
+				JAP = { 		    
+					load_oob = "JAP_starting_ai" 
+				}
+			}
+		}
+		
+		if = { limit = { ITA = { is_ai = yes } }
+			hidden_effect = { ## ai thinks its so important to have lvl 10 here for some weird reason
+				163 = {
+				    add_building_construction = {
+						type = naval_base
+						level = 1
+						province = 3943
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		if = { limit = { GER = { is_ai = no } }
+			hidden_effect = {
+				GER = { 		    
+					set_technology = { tech_do_23_bomber_equipment_1 = 1 popup = no  }
+					load_oob = "GER_starting_player" 
+				}
+			}
+		}
+        else_if = { limit = { GER = { is_ai = yes } }
+			hidden_effect = {
+				GER = { 		    
+					load_oob = "GER_starting_ai" 
+				}
+			}
+		}		
+		
+		if = { limit = { USA = { is_ai = no } }
+			hidden_effect = {
+				USA = { 		    
+					set_technology = { tech_USA_fighter_equipment_1_c = 1 popup = no  }
+					set_technology = { tech_USA_flying_boat_equipment_1 = 1 popup = no  }
+					load_oob = "USA_starting_player" 
+				}
+			}
+		}
+		else_if = { limit = { USA = { is_ai = yes } }
+			hidden_effect = {
+				USA = { 		    
+					load_oob = "USA_starting_ai" 
+				}
+			}
+		}
+		
+		SIK = { add_offsite_building = { type = arms_factory level = 1 } } 
+		XSM = { add_offsite_building = { type = arms_factory level = 1 } } 
+		SHX = { add_offsite_building = { type = arms_factory level = 1 } }
+		XIN = { add_offsite_building = { type = arms_factory level = 2 } } 
+		YUN = { add_offsite_building = { type = arms_factory level = 1 } } 
+		GXC = { add_offsite_building = { type = arms_factory level = 1 } } 
+		AFG = { add_offsite_building = { type = arms_factory level = 1 } }
+		
+		every_country = { 
+			limit = { 
+				is_ai = yes	
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = armor_officer
+				}
+				remove_unit_leader_trait = armor_officer
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = naval_invader
+				}
+				remove_unit_leader_trait = naval_invader
+			}
+			every_army_leader = {
+				limit = {
+					has_trait = paratrooper
+				}
+				remove_unit_leader_trait = paratrooper
+			}
+		}
+		
+		every_country = { 
+			limit = { 
+				has_idea = incompetent_heavy_industry
+				NOT = { tag = CCP }		
+			}
+			country_event = startevent.8
+		}
+		
+		if = {
+			limit = { CHI = { is_ai = yes	}	}
+			CHI = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+		if = {
+			limit = { CCP = { is_ai = yes	}	}
+			CCP = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+		if = {
+			limit = { GXC = { is_ai = yes	}	}
+			GXC = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+        }
+		if = {
+			limit = { GDC = { is_ai = yes	}	}
+			GDC = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+        }
+		if = {
+			limit = { SIC = { is_ai = yes	}	}
+			SIC = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+        }
+		if = {
+			limit = { XIN = { is_ai = yes	}	}
+			XIN = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+        }
+		if = {
+			limit = { YUN = { is_ai = yes	}	}
+			YUN = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+		if = {
+			limit = { SHX = { is_ai = yes	}	}
+			SHX = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+		if = {
+			limit = { XSM = { is_ai = yes	}	}
+			XSM = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+		if = {
+			limit = { SIK = { is_ai = yes	}	}
+			SIK = { hidden_effect = {		load_oob = "mass_assault_a" 	set_country_flag = mass_assault_a	} }
+		}
+
+        NEP = { set_country_flag = no_deploying }
+		BOI = { set_country_flag = no_deploying }
+		URG = { set_country_flag = no_deploying }
+		COS = { set_country_flag = no_deploying }
+		DOM = { set_country_flag = no_deploying }
+		HAI = { set_country_flag = no_deploying }
+		HON = { set_country_flag = no_deploying }
+		LIB = { set_country_flag = no_deploying }
+		NIC = { set_country_flag = no_deploying }
+					
+		GER = {  set_country_flag = normal_inf }
+		USA = {  set_country_flag = normal_inf }
+		AST = {  set_country_flag = normal_inf }
+		POL = {  set_country_flag = normal_inf }
+		HOL = {  set_country_flag = normal_inf }
+		BEL = {  set_country_flag = normal_inf }
+		NZL = {  set_country_flag = normal_inf }
+		CAN = {  set_country_flag = normal_inf }
+		BUL = {  set_country_flag = normal_inf }
+		AUS = {  set_country_flag = normal_inf }
+		FRA = {  set_country_flag = normal_inf }
+		SWI = {  set_country_flag = normal_inf }
+		every_country = {
+            limit = { NOT = { tag = ITA }	}	
+		    add_ideas = idea_peace
+		}
+		every_country = { 
+			limit = { has_tech = armor_industry0 }
+            add_ideas = {
+	             small_tank_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = vehicle_industry0 }
+            add_ideas = {
+	             small_logistic_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = artillery_industry0 }
+            add_ideas = {
+	             small_artillery_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = smallarms_industry0 }
+            add_ideas = {
+	             small_smallarms_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = uniform_industry0 }
+            add_ideas = {
+	             small_uniform_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = Ltaircraft_industry0 }
+            add_ideas = {
+	             small_Ltaircraftfactory
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = Hvaircraft_industry0 }
+            add_ideas = {
+	             small_hvaircraftfactory
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = ammo_industry0 }
+            add_ideas = {
+	             small_capital_shipyards
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = ship_industry0 }
+            add_ideas = {
+	             small_screen_shipyards
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = sub_industry0 }
+            add_ideas = {
+	             small_submarine_yards
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = vehicle_industry }
+            add_ideas = {
+	             medium_logistic_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = smallarms_industry }
+            add_ideas = {
+	             medium_smallarms_factories
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = Ltaircraft_industry }
+            add_ideas = {
+	             medium_Ltaircraftfactory
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = Hvaircraft_industry }
+            add_ideas = {
+	             medium_hvaircraftfactory
+	        }		
+		}
+		every_country = { 
+			limit = { has_tech = ship_industry }
+            add_ideas = {
+	             medium_screen_shipyards
+	        }		
+		}
+		
+		set_variable = { global.ostfront_year_4 = 0 }
+		
+		country_event = { id = EAI_C.129 days = 3 }
+	}
+	option = {}
+}
+
+country_event = {
+	id = EAI_C.129
+	hidden = yes
+        is_triggered_only = yes
+        fire_only_once = yes
+	immediate = {
+	
+		every_country = { 
+			limit = { 
+				is_ai = yes 
+			}
+			navy_experience = 250
+		}
+
+		
+		if = { 
+			limit = {
+				GER = { 
+					is_ai = yes 
+				} 
+			}
+			hidden_effect = {
+				add_resource = {
+					type = rubber
+					amount = 6
+					state = 58
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+					state = 53
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+					state = 64
+				}
+				add_resource = {
+					type = oil
+					amount = 8
+					state = 59
+				}
+			}
+		}
+		if = { 
+			limit = {
+				JAP = { 
+					is_ai = yes 
+				} 
+			}
+			hidden_effect = {
+				add_resource = {  # AI cant understand it can trade more from puppet, major handicap!
+					type = steel
+					amount = 20
+					state = 282
+				}
+			}
+		}
+		
+		#116 = { set_state_flag = ENG_controls_malta}
+		if = { 
+			limit = {
+				ENG = { 
+					is_ai = yes 
+				} 
+			}
+			
+			452 = { add_INF = yes
+				}
+					
+			ENG = { 
+				load_oob = "unlock_infantry39_at"
+			}
+		}
+	   
+		
+		every_country = { 
+			limit = { is_ai = yes } 
+			set_technology = {
+			   homefront_focus = 1
+			}	
+		}
+	}
+}
+
+
+country_event = {	
+	id = pride.3
+	title = pride.3.t
+	desc = pride.3.d
+	picture = prideofthefleetsunk
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    add_to_variable = { var = global.ostfront_year_4 value = 1 }
+    	country_event = { id = pride.3 months = 1 }
+	}
+	
+	option = {			
+	}
+}
+
+
+country_event = {
+	id = pride.43
+	title = pride.43.t
+	desc = pride.43.d
+	picture = prideofthefleetsunk
+	is_triggered_only = yes
+	
+	option = {
+	     set_variable = { global.ostfront_year_4 = 2 }
+	}
+}
+
+
+news_event = {
+	id = pride.44
+	title = pride.44.t
+	desc = pride.44.d
+	picture = prideofthefleetsunk
+	is_triggered_only = yes
+	
+	option = {
+	     name = pride.44.a
+		 trigger = {
+		 check_variable = {
+						var = global.ostfront_year_4
+						value = 1
+						compare = greater_than_or_equals
+					}
+		 }
+	}
+	option = {
+	     name = pride.44.b
+		 trigger = {
+		 check_variable = {
+						var = global.ostfront_year_4
+						value = 2
+						compare = greater_than_or_equals
+					}
+		 }
+	}
+	option = {
+	     name = pride.44.c
+		 trigger = {
+		 check_variable = {
+						var = global.ostfront_year_4
+						value = 3
+						compare = greater_than_or_equals
+					}
+		 }
+	}
+	option = {
+	     name = pride.44.e
+		 trigger = {
+		 check_variable = {
+						var = global.ostfront_year_4
+						value = 4
+						compare = greater_than_or_equals
+					}
+		 }
+	}
+}
+
+country_event = {	
+	id = pride.5
+	title = pride.5.t
+	desc = pride.5.d
+	picture = prideofthefleetsunk
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+    	every_state = {
+	    	limit = { 
+	        	has_state_category = tiny_island 
+				air_base > 2			 
+	    	}
+			remove_building = {
+				type = air_base
+				level = 1
+			}
+			controller = {
+			    country_event = { id = pride.6 }
+			}
+		 }
+		 #every_state = {
+	    #	limit = { 
+	    #    	has_state_category = tiny_island 
+		#		air_base < 3
+        #        free_building_slots = { building = air_base size < 8 include_locked = yes }				 
+	    #	}
+		#	controller = {
+		#	    country_event = { id = pride.66 }
+		#	}
+		# }
+		 
+		 
+		 every_state = {
+	    	limit = { 
+	        	has_state_category = small_island 
+				air_base > 4			
+	    	}
+			remove_building = {
+				type = air_base
+				level = 1
+			}
+			controller = {
+			    country_event = { id = pride.7 }
+			}
+		 }
+		 #every_state = {
+	    #	limit = { 
+	    #    	has_state_category = small_island 
+		#		air_base < 5
+         #       free_building_slots = { building = air_base size < 6 include_locked = yes }				
+	    #	}
+		#	controller = {
+		#	    country_event = { id = pride.77 }
+		#	}
+		 #}
+		 
+		  
+		  every_state = {
+	    	limit = { 
+	        	OR = {
+				    is_core_of = LBA
+					state = 552
+					state = 452
+                }	
+				infrastructure > 6	
+	         }
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
+			controller = {
+			    country_event = { id = pride.8 }
+			}
+		 }
+		# every_state = {
+	    #	limit = { 
+	    #    	OR = {
+		#		    is_core_of = LBA
+		#			state = 552
+		#			state = 452
+        #        }	
+		#		NOT = { infrastructure > 6	}
+		#		free_building_slots = { building = infrastructure size < 4 include_locked = yes }
+	    #     }
+		#	controller = {
+		#	    country_event = { id = pride.88 }
+		#	}
+		 #}
+		 
+		 country_event = { id = pride.5 days = 60 }
+	}
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+
+country_event = {	
+	id = pride.6
+	title = pride.6.t
+	desc = pride.6.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+country_event = {	
+	id = pride.66
+	title = pride.6.t
+	desc = pride.66.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+
+country_event = {	
+	id = pride.7
+	title = pride.6.t
+	desc = pride.7.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+country_event = {	
+	id = pride.77
+	title = pride.6.t
+	desc = pride.77.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+
+country_event = {	
+	id = pride.8
+	title = pride.8.t
+	desc = pride.8.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+country_event = {	
+	id = pride.88
+	title = pride.8.t
+	desc = pride.88.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	
+	option = {
+	    name = pride.6.a
+	}
+}
+	
+
+country_event = { # ai infantry equipment ratios
+	id = EAI_C.800
+	hidden = yes
+	mean_time_to_happen = { days = 10 }
+	trigger = {
+		is_ai = yes
+		NOT = { has_idea = betterlategame_idea }
+	}
+	immediate = {
+		TW_eq_ratio_infeq = yes
+		TW_eq_ratio_uniforms = yes
+		if = {
+			limit = {
+				FIN = {
+					not = { has_country_flag = FIN_cause_tt }
+					has_offensive_war_with = SOV
+					or = {
+						and = {
+							controls_state = 213
+							controls_state = 215
+							controls_state = 146
+						}
+						controls_state = 195
+					}
+				}
+			}
+			FIN = {
+				country_event = {
+					id = finland.117
+					days = 1
+				}
+			}
+		}
+	}
+	option = {}
+}
+
+country_event = {
+	id = testing.99 # Spanish civil war cleanup
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		    if = { 
+			    limit = {
+				    any_state = { OR = { state = 41 state = 165 state = 166 state = 167 state = 168 state = 169 state = 170 state = 171 state = 172 state = 173 state = 174 state = 175 state = 176 state = 177 state = 178 state = 788 state = 789 state = 790 state = 791 state = 792 state = 793 state = 794 }
+					NOT = { is_core_of = ROOT }
+					}
+			    }
+			}
+			else = {
+			    clr_country_flag = no_deploying
+			}
+	}
+	option = {}
+}
